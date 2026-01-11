@@ -1,10 +1,5 @@
 # Cloud Computing Internship – InternCareerPath
 
-**Intern Name:** Ian Cliff Wende  
-**Intern ID:** ICP-KH2PEK-2026  
-**Program Duration:** 6 Weeks  
-**Focus:** AWS Cloud Computing  
-
 ## Overview
 This repository documents my participation in the InternCareerPath Cloud Computing Internship Program.  
 The internship focuses on the hands-on implementation of cloud infrastructure using AWS, covering core areas such as storage, compute, networking, serverless architectures, databases, infrastructure as code, and high-availability systems.
