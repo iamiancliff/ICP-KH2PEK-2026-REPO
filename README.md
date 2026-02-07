@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Week 4 – Managed Database Integration (AWS RDS)
 
 ## Objective
