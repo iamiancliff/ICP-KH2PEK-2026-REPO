@@ -28,3 +28,69 @@ logs
 # OS files
 .DS_Store
 Thumbs.db
+ 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+venv/
+.venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+.terraform.lock.hcl
+
+# Additional Node lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Coverage, caches and build artifacts
+coverage/
+coverage.xml
+htmlcov/
+.cache/
+.pytest_cache/
+dist/
+build/
+
+# IDE/editor/temp
+*.suo
+*.user
+*.userosscache
+*.sln
+*.swp
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Misc
+Thumbs.db
+.DS_Store
+*.orig
+*.bak
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+*.tfplan
+*.tfvars.backup
+*.pem
+*.key
+.terraform.d/
+.history
