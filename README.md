@@ -1,87 +1,41 @@
-# Week 4 – Managed Database Integration (AWS RDS)
+# Cloud Computing Internship – InternCareerPath
 
-## Objective
-The goal of this project was to demonstrate how a Node.js backend application can connect to a managed relational database using AWS RDS (PostgreSQL).
+**Intern Name:** Ian Cliff Wende  
+**Intern ID:** ICP-KH2PEK-2026   
+**Focus:** AWS Cloud Computing  
 
----
+## Overview
+This repository documents my participation in the InternCareerPath Cloud Computing Internship Program.  
+The internship focuses on hands-on implementation of cloud infrastructure using AWS, covering core areas such as storage, compute, networking, serverless architectures, databases, infrastructure as code, and high availability systems.
 
-## Technologies Used
-- Node.js
-- Express.js
-- PostgreSQL
-- AWS RDS
-- Ubuntu (WSL)
-- Git & GitHub
+Each week contains a practical task aligned with real-world cloud engineering practices, emphasizing scalability, security, and automation.
 
----
+## Tech Stack
+- Amazon S3
+- Amazon CloudFront
+- Amazon EC2
+- Amazon VPC
+- AWS IAM
+- AWS Lambda
+- Amazon API Gateway
+- Amazon RDS / DynamoDB
+- Terraform
+- Application Load Balancer (ALB)
+- Auto Scaling Group (ASG)
+- Amazon CloudWatch
 
-## Architecture Overview
-The application follows a simple client-server architecture:
+## Weekly Breakdown
 
-1. A user sends an HTTP request from the browser
-2. A Node.js Express API processes the request
-3. The API queries a PostgreSQL database hosted on AWS RDS
-4. The database returns data to the API
-5. The API responds with JSON data
+| Week | Focus Area | Key AWS Services |
+|----|----|----|
+| Week 1 | Static Website Hosting | S3, CloudFront |
+| Week 2 | Compute & Networking | EC2, VPC, Security Groups |
+| Week 3 | Serverless Architecture | Lambda, API Gateway |
+| Week 4 | Managed Databases | RDS / DynamoDB |
+| Week 5 | Infrastructure as Code | Terraform |
+| Week 6 | High Availability & Scaling | ALB, ASG, CloudWatch |
 
----
-
-## Step-by-Step Implementation
-
-### Step 1: Create AWS RDS PostgreSQL Instance
-- Created a PostgreSQL database using AWS RDS
-- Configured public access for learning purposes
-- Allowed inbound traffic on port 5432 via security group
-- Verified database status as **Available**
-
-Screenshot: `screenshots/rds-postgres-instance.png`
-
----
-
-### Step 2: Connect to RDS Using Terminal
-- Connected to the RDS instance using `psql` from Ubuntu (WSL)
-- Created a users table
-- Inserted sample user records (name and email)
-
-Screenshot: `screenshots/db-data.png`
-
----
-
-### Step 3: Setup Node.js Project
-- Initialized Node.js project using `npm init`
-- Installed dependencies:
-  - express
-  - pg
-  - dotenv
-- Created `.env` file to store database credentials securely
-
----
-
-### Step 4: Database Connection (`db.js`)
-- Created a PostgreSQL connection pool using the `pg` library
-- Exported a reusable query function for database access
-
----
-
-### Step 5: Express API (`server.js`)
-- Created an Express server
-- Implemented `/users` endpoint to fetch records from PostgreSQL
-- Handled errors gracefully
-- Verified API response in browser
-
-Screenshot: `screenshots/api-browser-response.png`
-
----
-
-## Environment Variables
-Database credentials are stored in a `.env` file and excluded from GitHub using `.gitignore`.
-
----
-
-## Outcome
-This project demonstrates:
-- Practical use of AWS RDS
-- Secure database connectivity
-- Backend API development
-- Real-world cloud and database integration
-
+## Notes
+- All infrastructure follows AWS best practices.
+- Sensitive data such as credentials are managed using IAM roles and environment variables.
+- Each weekly folder contains its own README with architecture explanations and implementation details.
