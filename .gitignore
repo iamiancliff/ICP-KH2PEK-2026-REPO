@@ -94,3 +94,6 @@ terraform.tfvars
 *.key
 .terraform.d/
 .history
+
+# Ignore week6 frontend build archive
+week6-frontend-build.zip
